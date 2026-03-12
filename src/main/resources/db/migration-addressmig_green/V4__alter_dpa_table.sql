@@ -1,0 +1,1 @@
+ALTER TABLE addressmig_green.dpa ADD COLUMN created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP;

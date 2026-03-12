@@ -1,0 +1,19 @@
+spring:
+    profile: blue
+    main:
+      web-application-type: none
+
+    jpa:
+      hibernate:
+        ddl-auto: none #disable automatic schema validation/update
+
+
+    flyway:
+      enabled: true
+      schemas: addressmig_blue
+      default-schema: addressmig_blue
+      baseline-on-migration: true
+      locations: classpath:db/migration-addressmig_blue
+
+
+

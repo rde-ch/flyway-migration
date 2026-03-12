@@ -1,0 +1,13 @@
+# Build
+target/
+
+#Intellij
+.idea/
+*.iml
+
+#Data (Important)
+docker/data/
+*.csv
+
+#OS
+.DS_Store

@@ -1,0 +1,18 @@
+
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: flyway-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: migrationdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./data:/data
+
+volumes:
+  pgdata:

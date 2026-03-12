@@ -1,0 +1,1 @@
+SELECT  COUNT(*) FROM addressmig_green.dpa_backup;

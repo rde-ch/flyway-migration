@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/migrationdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  app:
+    active-schema: addressmig_blue
+  flyway:
+    enabled: false #running via CI
+    validate-on-migrate: true #Making migration fail fast
+    clean-disabled: true #Making migration fail fast
+
+
